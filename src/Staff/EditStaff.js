@@ -53,7 +53,7 @@ const EditStaff = () => {
     const onSubmit =async (e) => {
      e.preventDefault();
      await axios.put(`http://localhost:9090/staff/${id}`,staff)
-     navigate("/");
+     navigate("/staffhome");
 
     };
 
@@ -66,7 +66,7 @@ const EditStaff = () => {
   return (
     <>
       {/* < !-- =============== Navigation ================ --> */}
-      <div class="container">
+      <div class="container1">
         <div class="navigation">
           <ul>
             <li>
@@ -168,10 +168,10 @@ const EditStaff = () => {
           <div class="cardBox">
             {/* <div class="card"> */}
 
-            <Link className='btn btn-outline-light me-2' to="/staffhome">Staff Details</Link>
-            <Link className='btn btn-outline-light me-2' to="/addstaff">Add Staff</Link>
-            <Link className='btn btn-outline-light me-2' to="/AddStaffEvents">Assign new Staff</Link>
-            <Link className='btn btn-outline-light' to="/ViewAssignStaff">Assign Staff Each Events</Link>
+            <Link className='btn btn btn-primary me-2' to="/staffhome">Staff Details</Link>
+            <Link className='btn btn btn-primary me-2' to="/addstaff">Add Staff</Link>
+            <Link className='btn btn btn-primary me-2' to="/AddStaffEvents">Assign new Staff</Link>
+            <Link className='btn btn btn-primary' to="/ViewAssignStaff">Assign Staff Each Events</Link>
               
           {/* </div> */}
          </div>
@@ -203,7 +203,7 @@ const EditStaff = () => {
                             <input type={"text"} className="form-control" placeholder='Enter your E-mail' name='email' value={email} onChange={(e) => onInputChange(e)} />
                         </div>
                         <button type='submit' className='btn btn-outline-primary'>Submit</button>
-                        <Link  className='btn btn-outline-danger mx-2' to="/">Cancel</Link>
+                        <Link  className='btn btn-outline-danger mx-2' to="//staffhome">Cancel</Link>
                     </form>
                 </div>
 

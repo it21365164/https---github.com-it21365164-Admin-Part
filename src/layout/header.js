@@ -25,7 +25,7 @@ const header = () => {
     return (
         <>
           {/* < !-- =============== Navigation ================ --> */}
-          <div class="container">
+          <div class="container1">
             <div class="navigation">
               <ul>
                 <li>

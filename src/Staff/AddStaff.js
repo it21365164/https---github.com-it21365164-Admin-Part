@@ -51,7 +51,7 @@ const AddStaff = () => {
   return (
     <>
       {/* < !-- =============== Navigation ================ --> */}
-      <div class="container">
+      <div class="container1">
         <div class="navigation">
           <ul>
             <li>
@@ -153,11 +153,10 @@ const AddStaff = () => {
           <div class="cardBox">
             {/* <div class="card"> */}
 
-            <Link className='btn btn-outline-light me-2' to="/staffhome">Staff Details</Link>
-            <Link className='btn btn-outline-light me-2' to="/addstaff">Add Staff</Link>
-            
-            <Link className='btn btn-outline-light me-2' to="/AddStaffEvents">Assign new Staff</Link>
-            <Link className='btn btn-outline-light' to="/ViewAssignStaff">Assign Staff Each Events</Link>
+            <Link className='btn btn btn-primary me-2' to="/staffhome">Staff Details</Link>
+            <Link className='btn btn btn-primary me-2' to="/addstaff">Add Staff</Link>
+            <Link className='btn btn btn-primary me-2' to="/AddStaffEvents">Assign new Staff</Link>
+            <Link className='btn btn btn-primary' to="/ViewAssignStaff">Assign Staff Each Events</Link>
               
           {/*   */}
          </div>

@@ -48,7 +48,7 @@ const BookedEvents = () => {
     return (
         <>
           {/* < !-- =============== Navigation ================ --> */}
-          <div class="container">
+          <div class="container1">
             <div class="navigation">
               <ul>
                 <li>
@@ -151,10 +151,10 @@ const BookedEvents = () => {
               
             {/* <div class="card"> */}
               
-            <Link className='btn btn-outline-light me-2' to="/staffhome">Staff Details</Link>
+            {/* <Link className='btn btn-outline-light me-2' to="/staffhome">Staff Details</Link>
             <Link className='btn btn-outline-light me-2' to="/addstaff">Add Staff</Link>
             <Link className='btn btn-outline-light me-2' to="/AddStaffEvents">Assign new Staff</Link>
-            <Link className='btn btn-outline-light' to="/ViewAssignStaff">Assign Staff Each Events</Link>
+            <Link className='btn btn-outline-light' to="/ViewAssignStaff">Assign Staff Each Events</Link> */}
               
           
           </div>
@@ -170,7 +170,7 @@ const BookedEvents = () => {
 
             <div className='py-4'>
                 <h1>Booked Events</h1>
-                <br/><br/><br/><br/>
+                <br/><br/>
 
                 <table className="table border shadow">
                     {/* <thead>

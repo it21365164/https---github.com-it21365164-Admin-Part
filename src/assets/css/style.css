@@ -22,12 +22,12 @@ body {
   overflow-x: hidden;
 }
 
-.container {
+.container1 {
   position: relative;
   width: 100%;
 }
 
-/* =============== Navigation ================ */
+/* =============== navigation ================ */
 .navigation {
   position: fixed;
   width: 300px;
@@ -218,6 +218,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px;
+  /* background-color: #222; */
 }
 
 .cardBox .card {

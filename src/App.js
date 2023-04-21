@@ -1,5 +1,5 @@
 import './App.css';
-//import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AdminDashboard from './components/AdminDashboard';
 import StaffHome from './components/StaffHome';
