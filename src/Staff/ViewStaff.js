@@ -171,15 +171,18 @@ const loadStaff = async () => {
                         <div className='card-header'>
                                     <b>Staff ID :</b> {staff.id}
                             <ul className='list-group list-group-flush'>
-                                <li className='list-group-iteam'>
+                            <hr/>
+                                <ul className='list-group-iteam'>
                                     <b>Name :</b>{staff.staffName}
-                                </li>
-                                <li className='list-group-iteam'>
+                                </ul>
+                                <hr/>
+                                <ul className='list-group-iteam'>
                                     <b>E-mail:</b>{staff.email}
-                                </li>
-                                <li className='list-group-iteam'>
+                                </ul>
+                                <hr/>
+                                <ul className='list-group-iteam'>
                                     <b>Contact:</b>{staff.contact}
-                                </li>
+                                </ul>
                                 {/* <br/>
                                 <li className='list-group-iteam'>
                                      <b>Contact:</b>{staff.contact} 

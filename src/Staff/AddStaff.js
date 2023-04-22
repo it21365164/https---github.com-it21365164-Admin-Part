@@ -48,6 +48,16 @@ const AddStaff = () => {
 
     };
 
+    //VALIDATIONS
+      const initialValues = {staffName:"",contact:"",email:""}
+      const[formValues,setFormValues] = useState(initialValues);
+
+      const handleChange = (e) =>{
+         const{name,value}=e.target;
+         setFormValues({...formValues,[name]:value});
+
+      };
+
   return (
     <>
       {/* < !-- =============== Navigation ================ --> */}
@@ -177,17 +187,17 @@ const AddStaff = () => {
                     <form onSubmit={(e) => onSubmit(e)}>
                         <div className='mb-3'>
                             <label htmlFor="Staff Name" className='form-lable'>Name of the Employee :</label>
-                            <input type={"text"} className="form-control" placeholder='Enter your name' name='staffName' value={staffName} onChange={(e) => onInputChange(e)} />
+                            <input type={"text"} className="form-control" placeholder='Enter your name' name='staffName' value={formValues.staffName} onChange={(e) => onInputChange(e)} />
                         </div>
 
                         <div className='mb-3'>
                             <label htmlFor="Contact No" className='form-lable'>Contact Number :</label>
-                            <input type={"text"} className="form-control" placeholder='Enter your Contact number' name='contact' value={contact} onChange={(e) => onInputChange(e)} />
+                            <input type={"text"} className="form-control" placeholder='Enter your Contact number' name='contact' value={formValues.contact} onChange={(e) => onInputChange(e)}  />
                         </div>
 
                         <div className='mb-3'>
                             <label htmlFor="E-mail" className='form-lable'>E-mail :</label>
-                            <input type={"text"} className="form-control" placeholder='Enter your E-mail' name='email' value={email} onChange={(e) => onInputChange(e)} />
+                            <input type={"text"} className="form-control" placeholder='Enter your E-mail' name='email' value={formValues.email} onChange={(e) => onInputChange(e)} />
                         </div>
 
                         <button type='submit' className='btn btn-outline-primary'>Submit</button>

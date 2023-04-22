@@ -12,6 +12,8 @@ import EditAssignStaff from './AssignStaffEvents/EditAssignStaff';
 import ViewAssignStaffDetails from './AssignStaffEvents/ViewAssignStaffDetails';
 import BookedEvents from './components/BookedEvents';
 
+
+
 function App() {
   return (
 
@@ -24,6 +26,8 @@ function App() {
            <Route exact path="/addstaff" element={<AddStaff />} /> 
             <Route exact path="/editstaff/:id" element={<EditStaff />} /> 
             <Route exact path="/viewstaff/:id" element={<ViewStaff />} />
+
+            
 
             <Route exact path="/viewAssignstaff" element={<ViewAssignStaff/>} />
           <Route exact path="/addstaffevents" element={<AddStaffEvents />} />
